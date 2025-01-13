@@ -9,14 +9,14 @@
             "children": [
                 {
                     "name": "Foo",
-                    "id": "getting_stared|foo",
-                    "href": "/getting_stared/foo",
+                    "id": "getting_started|foo",
+                    "href": "/getting_started/foo",
                     "children": []
                 },
                 {
                     "name": "Bar",
-                    "id": "getting_stared|bar",
-                    "href": "/getting_stared/bar",
+                    "id": "getting_started|bar",
+                    "href": "/getting_started/bar",
                     "children": []
                 }
             ]
