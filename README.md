@@ -1,2 +1,3 @@
-# squirrel-docu
-Squirrel Docu Template
+# Squirrel Docu Template
+
+The Template for Docus
