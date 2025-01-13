@@ -1,0 +1,40 @@
+---
+import { Navigation } from "/components/navigation.squirrel"
+import { Navbar } from "/components/navbar.squirrel"
+---
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deno + uHTML</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.4.5/spectre.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.4.5/spectre-exp.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.4.5/spectre-icons.min.css"
+        />
+        <style>
+            /* Local Styles */
+        </style>
+    </head>
+    <body>
+        <Navbar />
+        <div class="container">
+            <div class="columns">
+                <div class="column col-4">
+                    <Navigation></Navigation>
+                </div>
+                <div class="column col-8">
+                    <slot/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

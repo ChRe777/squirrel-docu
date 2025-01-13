@@ -1,0 +1,26 @@
+const Squirrel =
+{
+"host":"localhost:8000",
+"origin":null,
+"cookies":{},
+"url":"http://localhost:8000/",
+"props":{
+    "children":
+        "[{\"name\":\"Getting","started\",\"id\":\"getting_started\",\"link\":\"":"","getting_started\",\"children\":[{\"name\":\"foo\",\"id\":\"getting_stared|foo\",\"link\":\"":"","getting_stared":"","foo\",\"children\":[]},{\"name\":\"bar\",\"id\":\"getting_stared|bar\",\"link\":\"":"","bar\",\"children\":[]}]},{\"name\":\"installation\",\"id\":\"installation\",\"link\":\"":"","installation\"}]":""}};
+
+
+onMapTag - newContext {
+  host: "localhost:8000",
+  origin: null,
+  cookies: {},
+  url: "http://localhost:8000/",
+  props: {
+    children: '[{"name":"Getting',
+    'started","id":"getting_started","link":"': "",
+    'getting_started","children":[{"name":"foo","id":"getting_stared|foo","link":"': "",
+    getting_stared: "",
+    'foo","children":[]},{"name":"bar","id":"getting_stared|bar","link":"': "",
+    'bar","children":[]}]},{"name":"installation","id":"installation","link":"': "",
+    'installation"}]': ""
+  }
+}

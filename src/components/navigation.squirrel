@@ -1,0 +1,42 @@
+---
+import { NavTree } from "/components/nav_tree.squirrel";
+//
+const { host } = Squirrel;
+const resp = await fetch(`http://${host}/json/nav.json`);
+const nav_tree = await resp.json();
+
+console.log("nav_tree.children:", nav_tree.children);
+
+---
+
+<NavTree children='${JSON.stringify(nav_tree.children)}' />
+
+<h2>Navigation</h2>
+<ul class="nav">
+  <li class="nav-item">
+    <a href="#">Elements</a>
+  </li>
+  <li class="nav-item active">
+    <a href="#">Layout</a>
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="#">Flexbox grid</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">Responsive</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">Navbar</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">Empty states</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a href="#">Components</a>
+  </li>
+  <li class="nav-item">
+    <a href="#">Utilities</a>
+  </li>
+</ul>

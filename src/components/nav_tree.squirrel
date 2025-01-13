@@ -1,0 +1,19 @@
+---
+import { NavTree } from "/components/nav_tree.squirrel";
+//
+let { children } = Squirrel.props;
+console.log("children", children);
+children = JSON.parse(children);
+
+if (children == undefined || children == null) {
+    children = [];
+}
+
+---
+<ul class="nav">
+${children.map(item => `
+    <li class="nav-item">
+        <a href='${item.href}'>${item.name}</a>
+        ${item.children ? `<NavTree children='${JSON.stringify(item.children)}' />` : '' }
+    </li>`).join("")}
+</ul>

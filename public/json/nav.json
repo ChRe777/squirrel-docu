@@ -1,0 +1,30 @@
+{
+    "name": "Root",
+    "id": "root",
+    "children": [
+        {
+            "name": "Getting Started",
+            "id": "getting_started",
+            "href": "/getting_started",
+            "children": [
+                {
+                    "name": "Foo",
+                    "id": "getting_stared|foo",
+                    "href": "/getting_stared/foo",
+                    "children": []
+                },
+                {
+                    "name": "Bar",
+                    "id": "getting_stared|bar",
+                    "href": "/getting_stared/bar",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Installation",
+            "id": "installation",
+            "href": "/installation"
+        }
+    ]
+}
