@@ -1,0 +1,12 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const name = "Installation";
+---
+<Layout>
+    <h2>${name}</h2>
+    Before you have to install Deno. See deno installation site.
+    <p>To run the installation of a new squirrel project run following command in terminal.</p>
+    <code>
+        > deno run http://denoland.com/x/squirrel/setup/install.ts
+    </code>
+</Layout>

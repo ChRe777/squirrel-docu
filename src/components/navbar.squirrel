@@ -6,8 +6,9 @@
         justify-content: center;  /* Horizontale Zentrierung */
         align-items: center;      /* Vertikale Zentrierung */
         height: 60px;
-        border: 1px dashed orange;
+        border-bottom: 1px dashed rgb(220,221,222);
         background-color: rgb(248,249,250);
+        margin-bottom: 0.5rem;
     }
     .navbar {
         width: 100%;

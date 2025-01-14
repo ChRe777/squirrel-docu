@@ -1,7 +1,0 @@
----
-import { Layout } from "/layouts/layout.squirrel";
-const name = "Foo";
----
-<Layout>
-    <h1>${name}</h1>
-</Layout>

@@ -1,0 +1,144 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const name = "About Deno";
+---
+
+<Layout>
+    <h1>Deno vs Node.js</h1>
+   <p>Deno and Node.js are both JavaScript/TypeScript runtime environments that allow you to run server-side code, but they differ significantly in design philosophy, security, and functionality. Here's a breakdown of the key differences:</p>
+   <h3>Security</h3>
+   <ul>
+      <li>
+         <strong>Deno</strong>: Deno is secure by default. It runs code in a sandboxed environment, meaning that it does not have access to the file system, network, or environment variables unless explicitly granted permission via flags like <code>--allow-read</code>, <code>--allow-write</code>, <code>--allow-net</code>, etc. This ensures that malicious code cannot easily compromise the system.
+         <ul>
+            <li>
+               Example: You must explicitly allow access to files or networks:
+               <pre class="code" data-lang="Bash"><code>
+deno run --allow-read --allow-net myscript.ts</code></pre>
+            </li>
+         </ul>
+      </li>
+      <li><strong>Node.js</strong>: Node.js has no such built-in security model. By default, Node.js applications have unrestricted access to the file system, network, and other resources, which means a malicious script can access sensitive parts of the system.</li>
+   </ul>
+   <h3>Package Management</h3>
+   <ul>
+      <li>
+         <strong>Deno</strong>: Deno does not use a package manager like npm. Instead, it directly imports modules via URLs. Deno uses ES modules (ESM) for imports, and everything is URL-based, making dependency management straightforward and decentralized.
+         <ul>
+            <li>
+                Example:
+                <pre class="code" data-lang="Typescript"><code>
+import { serve } from "https://deno.land/std/http/server.ts";</code></pre>
+            </li>
+         </ul>
+      </li>
+      <li>
+         <strong>Node.js</strong>: Node.js relies on npm (or Yarn) for package management. Dependencies are defined in a <code>package.json</code> file, and packages are installed locally or globally from a registry (npm registry). This centralizes package management and version control.
+         <ul>
+            <li>
+                Example:
+                <pre class="code" data-lang="Bash"><code>npm install express</code></pre>
+            </li>
+         </ul>
+      </li>
+   </ul>
+   <h3>Module System</h3>
+   <ul>
+      <li>
+         <strong>Deno</strong>: Deno uses <strong>ES Modules (ESM)</strong> natively, meaning you can use <code>import</code> and <code>export</code> syntax out of the box, without needing any bundler or transpiler (other than TypeScript support). This is consistent with modern JavaScript standards.
+         <ul>
+            <li>
+                Example:
+                <pre class="code" data-lang="Typescript"><code>
+import { myFunction } from './myModule.ts';</code></pre>
+            </li>
+         </ul>
+      </li>
+      <li><strong>Node.js</strong>: Historically, Node.js used CommonJS modules (e.g., <code>require</code> and <code>module.exports</code>). However, with recent versions, Node.js has started to support ES modules as well, but it requires special configuration (like using <code>.mjs</code> file extensions or setting <code>"type": "module"</code> in <code>package.json</code>).</li>
+   </ul>
+   <h3>Built-in TypeScript Support</h3>
+   <ul>
+      <li>
+         <strong>Deno</strong>: Deno has first-class <strong>TypeScript</strong> support out of the box. You don't need to install or configure anything; Deno can directly run <code>.ts</code> files. It compiles TypeScript into JavaScript behind the scenes.
+         <ul>
+            <li>
+                Example:
+                <pre class="code" data-lang="Bash"><code>
+deno run myscript.ts</code></pre>
+            </li>
+         </ul>
+      </li>
+      <li>
+         <strong>Node.js</strong>: Node.js does not have built-in TypeScript support. You need a tool like <strong>ts-node</strong> or a build tool (e.g., Babel or Webpack) to compile TypeScript before running the code.
+         <ul>
+            <li>
+                Example:
+                <pre class="code mb-0" data-lang="Bash"><code>ts-node myscript.ts
+npm install ts-node</code></pre>
+            </li>
+         </ul>
+      </li>
+   </ul>
+
+
+   <h3>Standard Library</h3>
+   <ul>
+      <li>
+         <strong>Deno</strong>: Deno provides a <strong>standard library</strong> that is bundled with the runtime itself. The standard library is stable, and Deno's creator, Ryan Dahl, ensures it’s up-to-date with modern features (e.g., modern HTTP server, file system APIs, etc.).
+         <ul>
+            <li>Example: Deno’s standard library includes modules for working with HTTP, date formatting, file system manipulation, and more.</li>
+         </ul>
+      </li>
+      <li><strong>Node.js</strong>: Node.js also has a <strong>standard library</strong>, but it is different in scope and content. While Node’s core modules are well-established, they are often more low-level compared to Deno’s modules. Node.js often relies on the community for additional features.</li>
+   </ul>
+   <h3>Runtime and Performance</h3>
+   <ul>
+      <li><strong>Deno</strong>: Deno is built with Rust and is designed to be modern and secure. Its performance is competitive, but it is still relatively new and may not yet be as mature as Node.js in terms of community support and ecosystem.</li>
+      <li><strong>Node.js</strong>: Node.js has been around since 2009 and is based on <strong>V8</strong>, the same JavaScript engine used in Chrome. It has a highly optimized runtime and has been proven to handle a large number of concurrent requests efficiently. Node.js has been around for much longer and is widely used in production environments.</li>
+   </ul>
+   <h3>Dependency Caching</h3>
+   <ul>
+      <li><strong>Deno</strong>: Deno caches dependencies on the first run, so subsequent runs do not require fetching the modules again unless the URL or version changes. However, this is managed automatically, and you can clear the cache using the <code>deno cache</code> command if needed.</li>
+      <li><strong>Node.js</strong>: In Node.js, dependencies are cached in <code>node_modules</code> after being installed via npm or Yarn. If you want to update a module, you need to manually run <code>npm update</code> or change the version in <code>package.json</code>.</li>
+   </ul>
+   <h3>Tooling and Ecosystem</h3>
+   <ul>
+      <li><strong>Deno</strong>: Deno has a growing ecosystem and a set of built-in tools. For example, Deno has its own code formatter (<code>deno fmt</code>), linter (<code>deno lint</code>), and testing framework (<code>deno test</code>), all bundled with the runtime. It is relatively new, so its ecosystem is not as large as Node.js, but it is rapidly developing.</li>
+      <li><strong>Node.js</strong>: Node.js has a vast and mature ecosystem with tools like npm, and the community has developed many libraries, frameworks (like Express, Koa, etc.), and tools over the years. The Node.js ecosystem is one of the largest open-source ecosystems.</li>
+   </ul>
+   <h3>Versioning</h3>
+   <ul>
+      <li>
+         <strong>Deno</strong>: Deno's versioning is URL-based, meaning you specify exact versions in the import URLs. Deno also ensures backwards compatibility and updates with breaking changes in new versions.
+         <ul>
+            <li>
+                Example:
+                <pre class="code" data-lang="Typescript"><code>
+import { serve } from "https://deno.land/std/http/server.ts?v=0.118.0";</code></pre>
+            </li>
+         </ul>
+      </li>
+      <li><strong>Node.js</strong>: Node.js packages are versioned in <code>package.json</code> and managed through npm. Versioning follows semantic versioning (semver), and you can use ranges to specify compatible versions of libraries.</li>
+   </ul>
+   <h3>Community and Adoption</h3>
+   <ul>
+      <li><strong>Deno</strong>: Deno is still relatively new (released in 2020) and has a smaller community, but it is growing rapidly and gaining adoption for projects that prioritize security and modern development practices.</li>
+      <li><strong>Node.js</strong>: Node.js has a large, mature, and widely adopted community, with millions of developers using it for various types of applications, from APIs to full-scale enterprise systems.</li>
+   </ul>
+   <hr>
+   <h3>Summary of Key Differences:</h3>
+   <ul>
+      <li><strong>Security</strong>: Deno is secure by default; Node.js is not.</li>
+      <li><strong>Module System</strong>: Deno uses ES modules by default; Node.js uses CommonJS (with ESM support).</li>
+      <li><strong>TypeScript</strong>: Deno supports TypeScript out of the box; Node.js requires extra configuration.</li>
+      <li><strong>Package Management</strong>: Deno uses URLs for dependencies (no package manager); Node.js uses npm/yarn.</li>
+      <li><strong>Standard Library</strong>: Deno provides a built-in standard library; Node.js has a less opinionated, more fragmented ecosystem.</li>
+      <li><strong>Tooling</strong>: Deno includes built-in tools (formatting, linting, testing); Node.js has a wider range of third-party tools.</li>
+   </ul>
+   <h3>Which One to Use?</h3>
+   <ul>
+      <li><strong>Use Deno</strong> if you're looking for a modern, secure, and TypeScript-first environment with simpler dependency management and built-in tools.</li>
+      <li><strong>Use Node.js</strong> if you need a mature, well-established ecosystem with a massive library of third-party packages and a proven track record in production environments.</li>
+   </ul>
+   <p>Let me know if you'd like more details on any specific aspect!</p>
+</Layout>

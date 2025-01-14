@@ -3,28 +3,41 @@
     "id": "root",
     "children": [
         {
+            "name": "Why is Squirrel?",
+            "id": "why_squirrel",
+            "href": "/why_squirrel"
+        },
+        {
+            "name": "What architecture",
+            "id": "architecture",
+            "href": "/architecture"
+        },
+        {
+            "name": "About Deno",
+            "id": "about_deno",
+            "href": "/about_deno"
+        },
+        {
             "name": "Getting Started",
             "id": "getting_started",
             "href": "/getting_started",
             "children": [
                 {
-                    "name": "Foo",
-                    "id": "getting_started|foo",
-                    "href": "/getting_started/foo",
-                    "children": []
-                },
-                {
-                    "name": "Bar",
-                    "id": "getting_started|bar",
-                    "href": "/getting_started/bar",
-                    "children": []
+                    "name": "Installation",
+                    "id": "getting_started|installation",
+                    "href": "/getting_started/installation"
                 }
             ]
         },
         {
-            "name": "Installation",
-            "id": "installation",
-            "href": "/installation"
+            "name": "Examples",
+            "id": "examples",
+            "href": "/examples"
+        },
+        {
+            "name": "Tutorial",
+            "id": "tutorial",
+            "href": "/tutorial"
         }
     ]
 }
