@@ -13,7 +13,7 @@ if (children == undefined || children == null) {
 <ul class="nav">
 ${children.map(item => `
     <li class="nav-item">
-        <a href='${item.href}'>${item.name}</a>
+        <a href="${item.href}">${item.name}</a>
         ${item.children ? `<NavTree children='${JSON.stringify(item.children)}' />` : '' }
     </li>`).join("")}
 </ul>

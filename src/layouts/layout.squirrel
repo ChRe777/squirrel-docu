@@ -22,16 +22,29 @@ import { Navbar } from "/components/navbar.squirrel"
         />
         <style>
             /* Local Styles */
+
+            .grid_5 {
+                background-image:
+                    linear-gradient(to right, rgb(230,241,232) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgb(230,241,232)  1px, transparent 1px);
+                background-size: 18.9px 18.9px; /* Adjust the size to 5mm equivalent in pixels */
+                background-position: 0 0;
+            }
+
+            .code code {
+                background-color: rgba(248,249,250,0.77) !important;
+            }
+
         </style>
     </head>
     <body>
         <Navbar />
         <div class="container">
             <div class="columns">
-                <div class="column col-3">
+                <div class="column col-2" style="padding-left:2rem; padding-top:1.0rem;">
                     <Navigation></Navigation>
                 </div>
-                <div class="column col-6">
+                <div class="column col-7 grid_5" style="padding-top:0.7rem;">
                     <slot/>
                 </div>
                 <div class="column col-3">

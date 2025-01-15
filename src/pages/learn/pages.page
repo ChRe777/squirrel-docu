@@ -1,0 +1,28 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Learn about pages";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>To create a new page create into folder "/backend/pages".
+
+    Pages have a head and a body. The head has the script part and the body the template.
+    </p>
+
+    <h4 class="mt-2">Page</h4>
+
+    <pre class="code" data-lang="Page"><code>---
+head/script
+---
+body/template
+</code></pre>
+
+<h4>Example</h4>
+
+    <pre class="code" data-lang="Page"><code>---
+const title = "New page"
+---
+<h1>\$\{title\}</h1></code></pre>
+
+</Layout>

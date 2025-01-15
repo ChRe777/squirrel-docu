@@ -1,7 +1,7 @@
 ---
 import { Layout } from "/layouts/layout.squirrel";
-const name = "Documentation";
+const title = "Documentation";
 ---
 <Layout>
-    <h1>${name}</h1>
+    <h1>${title}</h1>
 </Layout>

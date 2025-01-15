@@ -8,14 +8,16 @@
             "href": "/why_squirrel"
         },
         {
-            "name": "What architecture",
+            "name": "Architecture",
             "id": "architecture",
-            "href": "/architecture"
-        },
-        {
-            "name": "About Deno",
-            "id": "about_deno",
-            "href": "/about_deno"
+            "href": "/architecture",
+            "children": [
+                {
+                    "name": "About Deno",
+                    "id": "about_deno",
+                    "href": "/about_deno"
+                }
+            ]
         },
         {
             "name": "Getting Started",
@@ -26,13 +28,35 @@
                     "name": "Installation",
                     "id": "getting_started|installation",
                     "href": "/getting_started/installation"
+                },
+                {
+                    "name": "Create Project",
+                    "id": "getting_started|create_project",
+                    "href": "/getting_started/create_project"
                 }
             ]
         },
         {
-            "name": "Examples",
-            "id": "examples",
-            "href": "/examples"
+            "name": "Learn",
+            "id": "learn",
+            "href": "/learn",
+            "children": [
+                {
+                    "name": "Pages",
+                    "id": "learn|pages",
+                    "href": "/learn/pages"
+                },
+                {
+                    "name": "Layouts",
+                    "id": "learn|layouts",
+                    "href": "/learn/layouts"
+                },
+                {
+                    "name": "Components",
+                    "id": "learn|components",
+                    "href": "/learn/components"
+                }
+            ]
         },
         {
             "name": "Tutorial",

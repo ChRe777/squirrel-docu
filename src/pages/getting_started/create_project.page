@@ -1,0 +1,32 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Create Project";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>
+        To create a new project run following command in terminal.
+    </p>
+
+    <pre class="code" data-lang="Bash"><code>deno run http://denoland.com/x/squirrel/project/create.ts</code></pre>
+
+    <h3>Setup Guide</h3>
+
+    You will ask following question questions:
+
+    <ol>
+        <li>Choose folder for project</li>
+        <li>Choose template for project</li>
+        <li>Confirm Git init or not</li>
+    </ol>
+
+    <h3>After setup</h3>
+
+    <pre class="code" data-lang="Bash"><code>cd {project-folder}
+deno task start</pre>
+
+    <a href="/getting_started/installation" class="btn btn-primary mr-2"><< Back</a>
+    <a href="/getting_started/create_project" class="btn btn-primary">Next >></a>
+
+</Layout>

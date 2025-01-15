@@ -1,9 +1,9 @@
 ---
 import { Layout } from "/layouts/layout.squirrel";
-const name = "Why Squirrel?";
+const title = "Why Squirrel?";
 ---
 <Layout>
-    <h1>${name}</h1>
+    <h1>${title}</h1>
     <p>
         Squirrel was born from the idea of creating a <i>simple</i>, <i>fast</i>, and <i>modern</i> web framework.
     </p>
@@ -25,10 +25,15 @@ const name = "Why Squirrel?";
     </p>
 
     <h3 class="mt-2">Why Deno?</h3>
-    <p>Deno is the modern Node.js which is simple and secure.</p>
+    <p>
+        Deno is the modern Node.js which is simple and secure.
+        Read more about Deno <a href="/about_deno" target="_blank">here</a>.
+    </p>
 
     <h3 class="mt-2">Why µHtml?</h3>
-    <p>µHtml is very small and effecient library. It does not need a complicated virtual doom and still is fast.</p>
-
-
+    <p>
+        µHtml is very small and effecient library.
+        It does not need a complicated virtual doom and still is fast.
+        If you need more information about uHtml read <a href="https://webreflection.github.io/uhtml/" target="_blank">here.
+    </p>
 </Layout>

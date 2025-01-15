@@ -1,10 +1,11 @@
 ---
 import { Layout } from "/layouts/layout.squirrel";
-const name = "About Deno";
+const title = "About Deno and Node";
 ---
 
 <Layout>
-    <h1>Deno vs Node.js</h1>
+   <h1>${title}</h1>
+
    <p>Deno and Node.js are both JavaScript/TypeScript runtime environments that allow you to run server-side code, but they differ significantly in design philosophy, security, and functionality. Here's a breakdown of the key differences:</p>
    <h3>Security</h3>
    <ul>

@@ -4,6 +4,7 @@ import { NavTree } from "/components/nav_tree.squirrel";
 const { origin } = Squirrel;
 const resp = await fetch(`${origin}/json/nav.json`);
 const nav_tree = await resp.json();
+//
+const name="Navigation";
 ---
-<h2>Navigation</h2>
 <NavTree children='${JSON.stringify(nav_tree.children)}' />

@@ -1,0 +1,42 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Learn about layouts";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>Layout are the same like pages, but they are define the layout of a page</p>
+
+    <h4>Example Layout</h4>
+
+        You define a layout with have a slot.
+        A slot if a hole where they page that use the layout fill the content in.
+
+        <pre class="code" data-lang="Page"><code>---
+import { Navbar } from "/components/navbar.squirrel";
+import { Footer } from "/components/footer.squirrel";
+---
+<html>
+    <head>
+        <link href="http://foo.com/css" rel="stylesheet" />
+    </head>
+    <body>
+        <Navbar />
+        <slot/>
+        <Footer />
+    </body>
+</html>
+</code></pre>
+
+<h4>Example usage of layout</h4>
+
+        <pre class="code" data-lang="Page"><code>---
+import { Layout } from "/layouts/layout.squirrel"
+---
+<Layout>
+    <h1>Title</h1>  /-- goes into the slot
+    Some text       /-- goes into the slot
+</Layout>
+</code></pre>
+
+</Layout>

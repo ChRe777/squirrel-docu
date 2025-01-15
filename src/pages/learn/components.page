@@ -1,0 +1,30 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Learn about components";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>Components are same like pages or layouts.
+    Components can have other components as childs.
+    Components are for example a Navbar or the footer.</p>
+
+    <h4>Example usage of components</h4>
+
+        <pre class="code" data-lang="Page"><code>---
+import { Layout } from "/layouts/layout.squirrel"
+import { ComponentA } from "/components/componentA.squirrel"
+import { ComponentB } from "/components/componentA.squirrel"
+---
+<Layout>
+    <h1>Title</h1>
+    <ComponentA />
+    <ComponentB>
+        Some text   /-- goes into <slot>
+    </ComponentB>
+</Layout>
+</code></pre>
+
+</Layout>
+
+</Layout>

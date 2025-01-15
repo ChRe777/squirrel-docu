@@ -1,9 +1,9 @@
 ---
 import { Layout } from "/layouts/layout.squirrel";
-const name = "Architecture";
+const title = "Architecture";
 ---
 <Layout>
-    <h1>${name}</h1>
+    <h1>${title}</h1>
 
     <p>This is brief description about the architeture of Squirrel.</p>
 
@@ -15,7 +15,7 @@ const name = "Architecture";
     <p>
         The server renders the most of the HTML and this can he cached.
         And then it lets <b>holes</b> in the page for dynamic content that could
-        be fill with dynamic content on front end.
+        be fill with content on the front end.
     </p>
 
     <p>
@@ -23,5 +23,21 @@ const name = "Architecture";
         you can use any other framework that suppor to render into a single
         div-tag.
     </p>
+
+    <h3>Project structure</h3>
+
+<pre class="code" data-lang="HTML"><code>PROJECT-DIR
+|---.cache/
+|---public/
+    |---js/
+    |---img/
+    |---css/
+|---backend/
+    |---components/
+    |---layouts/
+    |---pages/
+deno.json
+README.md</code>
+</pre>
 
 </Layout>
