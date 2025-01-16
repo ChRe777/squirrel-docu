@@ -30,12 +30,15 @@ import { Footer } from "/components/footer.squirrel";
 
 <h4>Example usage of layout</h4>
 
+<p>Import the layout in the script header of a page and use the Layout like
+a tag.</p>
+
         <pre class="code" data-lang="Page"><code>---
 import { Layout } from "/layouts/layout.squirrel"
 ---
 <Layout>
-    <h1>Title</h1>  /-- goes into the slot
-    Some text       /-- goes into the slot
+    <h1>Title</h1>  // line goes into the hole of layout
+    Some text       // line goes into the hole of layout
 </Layout>
 </code></pre>
 

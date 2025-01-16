@@ -4,4 +4,5 @@ const title = "Getting Started";
 ---
 <Layout>
     <h1>${title}</h1>
+    <cite>Everything Should Be Made as Simple as Possible, But Not Simpler!</cite>
 </Layout>

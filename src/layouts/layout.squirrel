@@ -35,6 +35,12 @@ import { Navbar } from "/components/navbar.squirrel"
                 background-color: rgba(248,249,250,0.77) !important;
             }
 
+            .code code {
+                background-color: rgba(10,11,12,0.77) !important;
+                color: white;
+                font-family: "PT Mono","Monaco";
+            }
+
         </style>
     </head>
     <body>

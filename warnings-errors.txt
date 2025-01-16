@@ -25,3 +25,6 @@ CRITICAL Wed Jan 15 2025 17:41:29 GMT+0100 (Central European Standard Time) exam
 WARNING Wed Jan 15 2025 20:05:20 GMT+0100 (Central European Standard Time) example warning
 ERROR Wed Jan 15 2025 20:05:20 GMT+0100 (Central European Standard Time) example error message
 CRITICAL Wed Jan 15 2025 20:05:20 GMT+0100 (Central European Standard Time) example critical message
+WARNING Thu Jan 16 2025 15:00:49 GMT+0100 (Central European Standard Time) example warning
+ERROR Thu Jan 16 2025 15:00:49 GMT+0100 (Central European Standard Time) example error message
+CRITICAL Thu Jan 16 2025 15:00:49 GMT+0100 (Central European Standard Time) example critical message

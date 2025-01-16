@@ -20,7 +20,7 @@ import { ComponentB } from "/components/componentA.squirrel"
     <h1>Title</h1>
     <ComponentA />
     <ComponentB>
-        Some text   /-- goes into <slot>
+        Some text   // goes into hole of component
     </ComponentB>
 </Layout>
 </code></pre>

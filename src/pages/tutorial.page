@@ -1,0 +1,7 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Tutorial"
+---
+<Layout>
+    <h1>${title}</h1>
+</Layout>

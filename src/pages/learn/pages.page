@@ -13,9 +13,9 @@ const title = "Learn about pages";
     <h4 class="mt-2">Page</h4>
 
     <pre class="code" data-lang="Page"><code>---
-head/script
+head (ES6 script)
 ---
-body/template
+body (HTML with ES6 template literals)
 </code></pre>
 
 <h4>Example</h4>
@@ -23,6 +23,7 @@ body/template
     <pre class="code" data-lang="Page"><code>---
 const title = "New page"
 ---
-<h1>\$\{title\}</h1></code></pre>
+<h1>\$\{title\}</h1>
+<p>Some text</p></code></pre>
 
 </Layout>
