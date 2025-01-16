@@ -1,19 +1,27 @@
 ---
-const { img, title, subtitle } = Squirrel.props;
+const { img, title, subtitle, imgtop } = Squirrel.props;
+const imgTop_ = (imgtop == "true") ? true : false;
 ---
 
 <div class="card">
-  <div class="card-image">
-    <img src="img/osx-el-capitan.jpg" class="img-responsive">
-  </div>
+  ${ imgTop_ ?
+    `<div class="card-image card-image-top">
+        <img src='${img}' class="img-responsive">
+    </div>` : ''
+  }
   <div class="card-header">
-    <div class="card-title h5">...</div>
-    <div class="card-subtitle text-gray">...</div>
+    <div class="card-title h5">${title}</div>
+    <div class="card-subtitle text-gray">${subtitle}</div>
   </div>
   <div class="card-body">
     <slot />
   </div>
   <div class="card-footer">
-    <button class="btn btn-primary">...</button>
+    <button class="btn btn-primary">Read...</button>
   </div>
+  ${ (imgTop_ == false) ?
+   `<div class="card-image card-image-bottom">
+    <img src='${img}' class="img-responsive">
+  </div>`:''
+  }
 </div>

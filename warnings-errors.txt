@@ -28,3 +28,75 @@ CRITICAL Wed Jan 15 2025 20:05:20 GMT+0100 (Central European Standard Time) exam
 WARNING Thu Jan 16 2025 15:00:49 GMT+0100 (Central European Standard Time) example warning
 ERROR Thu Jan 16 2025 15:00:49 GMT+0100 (Central European Standard Time) example error message
 CRITICAL Thu Jan 16 2025 15:00:49 GMT+0100 (Central European Standard Time) example critical message
+ERROR Thu Jan 16 2025 18:03:41 GMT+0100 (Central European Standard Time) SyntaxError: Unexpected string
+    at new Function (<anonymous>)
+    at evaluateAndReturn (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:42:16)
+    at evalBody (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:62:39)
+    at transpile (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:132:33)
+    at onMapTag (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/mapper.ts:111:38)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:43:43)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+ERROR Thu Jan 16 2025 18:03:41 GMT+0100 (Central European Standard Time) SyntaxError: Unexpected string
+    at new Function (<anonymous>)
+    at evaluateAndReturn (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:42:16)
+    at evalBody (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:62:39)
+    at transpile (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:132:33)
+    at onMapTag (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/mapper.ts:111:38)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:43:43)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+ERROR Thu Jan 16 2025 18:03:45 GMT+0100 (Central European Standard Time) SyntaxError: Unexpected string
+    at new Function (<anonymous>)
+    at evaluateAndReturn (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:42:16)
+    at evalBody (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:62:39)
+    at transpile (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:132:33)
+    at onMapTag (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/mapper.ts:111:38)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:43:43)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+ERROR Thu Jan 16 2025 18:03:45 GMT+0100 (Central European Standard Time) SyntaxError: Unexpected string
+    at new Function (<anonymous>)
+    at evaluateAndReturn (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:42:16)
+    at evalBody (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:62:39)
+    at transpile (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:132:33)
+    at onMapTag (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/mapper.ts:111:38)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:43:43)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+ERROR Thu Jan 16 2025 18:03:47 GMT+0100 (Central European Standard Time) SyntaxError: Unexpected string
+    at new Function (<anonymous>)
+    at evaluateAndReturn (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:42:16)
+    at evalBody (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:62:39)
+    at transpile (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:132:33)
+    at onMapTag (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/mapper.ts:111:38)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:43:43)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+ERROR Thu Jan 16 2025 18:03:47 GMT+0100 (Central European Standard Time) SyntaxError: Unexpected string
+    at new Function (<anonymous>)
+    at evaluateAndReturn (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:42:16)
+    at evalBody (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:62:39)
+    at transpile (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/transpiler.ts:132:33)
+    at onMapTag (file:///Users/christophreif/Documents/Projects/deno_squirrel/page/mapper.ts:111:38)
+    at eventLoopTick (ext:core/01_core.js:175:7)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:43:43)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+    at async renderTree (file:///Users/christophreif/Documents/Projects/deno_squirrel/html/renderer.ts:89:17)
+WARNING Thu Jan 16 2025 18:30:50 GMT+0100 (Central European Standard Time) example warning
+ERROR Thu Jan 16 2025 18:30:50 GMT+0100 (Central European Standard Time) example error message
+CRITICAL Thu Jan 16 2025 18:30:50 GMT+0100 (Central European Standard Time) example critical message
+WARNING Thu Jan 16 2025 18:36:03 GMT+0100 (Central European Standard Time) example warning
+ERROR Thu Jan 16 2025 18:36:03 GMT+0100 (Central European Standard Time) example error message
+CRITICAL Thu Jan 16 2025 18:36:03 GMT+0100 (Central European Standard Time) example critical message

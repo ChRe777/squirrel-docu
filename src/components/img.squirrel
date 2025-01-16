@@ -1,0 +1,14 @@
+---
+const { src, color, width, height } = Squirrel.props;
+---
+<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <mask id="image-mask">
+
+      <image x="0" y="0" width="${width}" height="${height}" href='${src}' />
+    </mask>
+  </defs>
+
+  <rect width="${width}" height="${height}" fill='${color}' mask="url(#image-mask)" />
+</svg>

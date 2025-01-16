@@ -1,0 +1,39 @@
+---
+// see https://www.apple.com/newsroom/
+
+import { Layout } from "/layouts/layout.squirrel";
+---
+<Layout>
+    <h1>Step 1: Create the layout</h1>
+
+    <p>
+        Is this we will create a layout with a header, a footer and a
+        hole for the body that will filled on each page that uses this
+        layout.
+    </p>
+    <p>
+        The layout is a full html with head and body and with styles.
+    </p>
+
+        <pre class="code" data-lang="Squirrel"><code>---
+// Import components
+import { Header } from "/components/header.squirrel";
+import { Footer } from "/components/footer.squirrel";
+---
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.4.5/spectre.min.css"
+        />
+    </head>
+    <body>
+        <Header />
+        <slot/>
+        <Footer />
+    </body>
+</html>
+</code></pre>
+
+    <a href="/tutorial/step_2" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
+</Layout>

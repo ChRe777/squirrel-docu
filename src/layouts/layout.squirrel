@@ -1,6 +1,7 @@
 ---
-import { Navigation } from "/components/navigation.squirrel"
-import { Navbar } from "/components/navbar.squirrel"
+import { Navigation } from "/components/navigation.squirrel";
+import { Navbar } from "/components/navbar.squirrel";
+import { Footer } from "/components/footer.squirrel";
 ---
 <html>
     <head>
@@ -23,7 +24,7 @@ import { Navbar } from "/components/navbar.squirrel"
         <style>
             /* Local Styles */
 
-            .grid_5 {
+            .grid_5_ {
                 background-image:
                     linear-gradient(to right, rgb(230,241,232) 1px, transparent 1px),
                     linear-gradient(to bottom, rgb(230,241,232)  1px, transparent 1px);
@@ -39,6 +40,24 @@ import { Navbar } from "/components/navbar.squirrel"
                 background-color: rgba(10,11,12,0.77) !important;
                 color: white;
                 font-family: "PT Mono","Monaco";
+            }
+
+            .card {
+                border-radius: 1.0rem !important;
+                background-color: rgb(20,21,23);
+            }
+
+            .card .card-image.card-image-top img {
+                border-radius: 1rem 1rem 0 0 !important;
+            }
+
+            .card .card-image.card-image-bottom img {
+                border-radius: 0 0 1rem 1rem !important;
+            }
+
+            .footer {
+                height: 5rem;
+                background-color: rgb(231,232,233);
             }
 
         </style>
@@ -57,5 +76,6 @@ import { Navbar } from "/components/navbar.squirrel"
                 </div>
             </div>
         </div>
+        <Footer />
     </body>
 </html>

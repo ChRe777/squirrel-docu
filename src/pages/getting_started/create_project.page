@@ -11,7 +11,7 @@ const title = "Create Project";
 
     <pre class="code" data-lang="Bash"><code>deno run http://denoland.com/x/squirrel/project/create.ts</code></pre>
 
-    <h3>Setup Guide</h3>
+    <h3 class="mt-2">Setup Guide</h3>
 
     You will ask following question questions:
 
@@ -21,7 +21,7 @@ const title = "Create Project";
         <li>Confirm Git init or not</li>
     </ol>
 
-    <h3>Start server</h3>
+    <h3 class="mt-2">Start server</h3>
 
     <p>To start the server enter</p>
 
@@ -31,6 +31,6 @@ deno task start</pre>
     <p>and open der Browser with URL <b>http:/localhost:8000/</b></p>
 
     <a href="/getting_started/installation" class="btn btn-primary mr-2"><i class="icon icon-arrow-left"></i> Back</a>
-    <a href="/getting_started/create_project" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
+    <a href="/learn" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
 
 </Layout>

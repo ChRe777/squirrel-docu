@@ -4,4 +4,30 @@ const title = "Tutorial"
 ---
 <Layout>
     <h1>${title}</h1>
+
+    <p>
+    In this tutorial with learn to create a small blog web site.
+    We are doing server side rendering and front side rendering.
+    </p>
+
+    <p>
+    We create a layout.
+    We will create components.
+    </p>
+
+    <p><b>Just have fun!!</b></p>
+
+    <h4>Step by Step we will learn following:</h4>
+
+    <p>see https://www.apple.com/newsroom/</p>
+
+    <ul>
+        <li>Step 1: Create a layout</li>
+        <li>Step 2: Create the blog page</li>
+        <li>Step 3: Create a blog item component</li>
+        <li>Step x: Create a colored logo</li>
+    </ul>
+
+    <a href="/tutorial/step_1" class="btn btn-primary">Let's go <i class="icon icon-arrow-right"></i></a>
+
 </Layout>

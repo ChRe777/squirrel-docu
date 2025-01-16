@@ -4,4 +4,22 @@ const title = "Learn"
 ---
 <Layout>
     <h1>${title}</h1>
+
+    Here you will learn about following:
+
+    <ul>
+        <li><b>Layouts</b></li>
+        <li><b>Pages</b></li>
+        <li><b>Components</b></li>
+    </ul>
+
+    <h4 class="mt-2">Pages</h4>
+    <p>A page use a layout and have components and content.</p>
+
+    <h4 class="mt-2">Layouts</h4>
+    <p>The layout define the design.</p>
+
+    <h4 class="mt-2">Components</h4>
+    <p>Components are things like a header, or a navigation bar or a breadcrumb and so on.</p>
+
 </Layout>

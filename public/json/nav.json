@@ -65,13 +65,18 @@
             "children": [
                 {
                     "name": "Step 1",
-                    "id": "tutorial|page1",
-                    "href": "/tutorial/page_1"
+                    "id": "tutorial|step_1",
+                    "href": "/tutorial/step_1"
                 },
                 {
                     "name": "Step 2",
-                    "id": "tutorial|page2",
-                    "href": "/tutorial/page_2"
+                    "id": "tutorial|step_2",
+                    "href": "/tutorial/step_2"
+                },
+                {
+                    "name": "Step 3",
+                    "id": "tutorial|step_3",
+                    "href": "/tutorial/step_3"
                 }
             ]
         }

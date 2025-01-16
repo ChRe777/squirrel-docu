@@ -1,8 +1,0 @@
----
-// see https://www.apple.com/newsroom/
-
-import { Layout } from "/layouts/layout.squirrel";
----
-<Layout>
-    <h1>Step 1: Create the layout</h1>
-</Layout>

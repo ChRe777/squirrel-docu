@@ -1,0 +1,29 @@
+---
+---
+<div class="container bg-gray">
+    <div class="columns">
+        <div class="column col-3">
+        </div>
+        <div class="column col-3">
+            <ul style="list-style: none;">
+                <li>Contact</li>
+                <li>Documentation</li>
+                <li>E-Mail</li>
+            <ul>
+        </div>
+        <div class="column col-3">
+            <ul style="list-style: none;">
+                <li>Contact</li>
+                <li>Documentation</li>
+                <li>E-Mail</li>
+            <ul>
+        </div>
+        <div class="column col-3">
+            <ul style="list-style: none;">
+                <li>About</li>
+                <li>Developers</li>
+                <li>Blog</li>
+            <ul>
+        </div>
+    </div>
+</div>

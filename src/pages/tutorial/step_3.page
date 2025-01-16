@@ -1,0 +1,16 @@
+---
+// see https://www.apple.com/newsroom/
+
+import { Layout } from "/layouts/layout.squirrel";
+
+---
+<Layout>
+    <h1>Step 3: Create a the main blog page</h1>
+
+    <p>
+        Here we create a the main page which shows the blog entries.
+    </p>
+
+    <a href="/tutorial/step_4" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
+
+</Layout>
