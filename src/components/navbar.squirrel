@@ -10,13 +10,12 @@ import { Image } from "/components/img.squirrel";
         height: 60px;
         border-bottom: 1px dashed rgb(220,221,222);
         background-color: rgb(248,249,250);
-        margin-bottom: 0.5rem;
     }
     .navbar {
         width: 100%;
     }
 </style>
-<div class="container2">
+<div class="container2 header">
     <header class="navbar bg-gray p-2">
         <section class="navbar-section" style="margin-left:1.5rem;">
             <Image width="20" height="20" src="/img/squirrel_mask2.png" color="rgb(87,85,209)"></Image>

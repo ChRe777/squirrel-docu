@@ -3,15 +3,17 @@
 
 import { Layout } from "/layouts/layout.squirrel";
 import { Card } from "/components/card.squirrel";
+import { PrevNext } from "/components/prevnext.squirrel";
+
 ---
 <Layout>
-    <h1>Step 2: Create a blog item component</h1>
+    <h1>Step 2 - <b>Create a component</b></h1>
 
     <p>
-        We create a component for blog entries as cards.
+        In this step we create a component for blog items. We use cards from the css library.
     </p>
 
-    <h3>Example cards</h3>
+    <h4>Example cards</h4>
 
     <div class="columns mr-2 ml-2">
         <div class="column col-6">
@@ -22,10 +24,6 @@ import { Card } from "/components/card.squirrel";
         </div>
     </div>
 
-    <p class="mt-2">
-    <a href="/tutorial/step_2" class="btn btn-primary mt-2">Next <i class="icon icon-arrow-right"></i></a>
-    </p>
-
-    <h3></h3>
+    <PrevNext nr="2"></PrevNext>
 
 </Layout>

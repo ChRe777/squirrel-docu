@@ -7,15 +7,81 @@ const title = "Architecture";
 
     <p>This is brief description about the architeture of Squirrel.</p>
 
-    <h3 class="mt-2">Backend and Front</h3>
+    <h5 class="mt-2">Backend and Front</h5>
     <p>
         Squirrel uses Server-Side-Rendering and Front-Side-Rendering.
+        Squirrel's key is to combine static with dynamic content.
     </p>
 
+    <h5 class="mt-2">Brief with history</h5>
     <p>
+        In the beginning with rendered everything on the server.
+        THen with have a little bit dynamic with javascript.
+        Then Microsoft invented XMLHttpRequest to download data
+        from server on the fly and the stone started to role.
+        Then we ended in huge frontside rendering frameworks
+        like Vue, Angular, React and so own. They invented the
+        virtual DOM to manage the rendering performance. Now
+        we are back on server side rendering for static parts
+        of the page and dynamic holes or island on the front end.
+        Even we can combine everything we need. Server rendering
+        could be cached for static rendering, but also can be dynamic
+        on the backend and Dynamic in the frontend. If you let the
+        technolgy open, people would be creative to fill there needs.
+    </p>
+
+    <h5 class="mt-2">Anylogy anatomy of the human body</h5>
+    <p>
+        We have bones that provide stability and muscles that allow flexibility.
+        Both, in combination, make us highly robust in interacting with the world.
+        Without bones, we'd be like jelly, and without muscles, we wouldn't be able to move.
+    </p>
+
+    We have muscles and bones working together because they serve complementary functions that allow us to move, support our bodies, and interact with our environment effectively.
+
+    <ul>
+    <li><b>Bones</b> provide structural support and form the rigid framework of our body. They protect vital organs, store minerals, and serve as attachment points for muscles. Without bones, we would lack shape, support, and protection for our internal systems.</li>
+
+    <li><b>Muscles</b>, on the other hand, are responsible for movement. They contract and relax to generate force, which moves the bones at the joints. Muscles give us the ability to perform actions such as walking, lifting, and grasping.</li>
+    </ul>
+Together, muscles and bones create a system that allows for **mobility** and **stability**. The bones provide the structure and leverage for muscle action, while muscles enable movement and provide the force necessary to move the bones. This synergy allows us to interact dynamically with the world, balancing stability with flexibility and adaptability.
+
+    <h5 class="mt-8">Anylogy for reinforced concrete</h5>
+    <p>
+
+        The concrete is for compression, and the steel is for tension.
+        Both in combination makes the material very robust.
+    </p>
+
+    <table class="table container w-50">
+        <thead>
+            <tr>
+                <th>squirrle</th>
+                <th>rendering</th>
+                <th>human</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>static</td>
+                <td>server-side</td>
+                <td>bones</td>
+
+            </tr>
+            <tr>
+                <td>dynamic</td>
+                <td>front-side</td>
+                <td>muscles</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="mt-8">
         The server renders the most of the HTML and this can he cached.
         And then it lets <b>holes</b> in the page for dynamic content that could
-        be fill with content on the front end.
+        be fill with content at the front end. So the key is the combination of
+        both world server and front rendering.
     </p>
 
     <p>
@@ -24,20 +90,6 @@ const title = "Architecture";
         div-tag.
     </p>
 
-    <h3>Project structure</h3>
 
-<pre class="code" data-lang="HTML"><code>PROJECT-DIR
-|---.cache/
-|---public/
-    |---js/
-    |---img/
-    |---css/
-|---backend/
-    |---components/
-    |---layouts/
-    |---pages/
-deno.json
-README.md</code>
-</pre>
 
 </Layout>

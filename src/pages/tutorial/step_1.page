@@ -2,10 +2,11 @@
 // see https://www.apple.com/newsroom/
 
 import { Layout } from "/layouts/layout.squirrel";
+import { PrevNext } from "/components/prevnext.squirrel";
+
 ---
 <Layout>
-    <h1>Step 1: Create the layout</h1>
-
+    <h1>Step 1 - <b>Create the layout</b></h1>
     <p>
         Is this we will create a layout with a header, a footer and a
         hole for the body that will filled on each page that uses this
@@ -24,7 +25,7 @@ import { Footer } from "/components/footer.squirrel";
     <head>
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.4.5/spectre.min.css"
+            href="https://../spectre.css/0.4.5/spectre.min.css"
         />
     </head>
     <body>
@@ -35,5 +36,5 @@ import { Footer } from "/components/footer.squirrel";
 </html>
 </code></pre>
 
-    <a href="/tutorial/step_2" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
+    <PrevNext nr="1"></PrevNext>
 </Layout>

@@ -2,6 +2,8 @@
 // see https://www.apple.com/newsroom/
 
 import { Layout } from "/layouts/layout.squirrel";
+import { PrevNext } from "/components/prevnext.squirrel";
+
 
 ---
 <Layout>
@@ -11,6 +13,6 @@ import { Layout } from "/layouts/layout.squirrel";
         Here we create a the main page which shows the blog entries.
     </p>
 
-    <a href="/tutorial/step_4" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
+    <PrevNext nr="3"></PrevNext>
 
 </Layout>

@@ -42,6 +42,11 @@
             "href": "/learn",
             "children": [
                 {
+                    "name": "Structure",
+                    "id": "learn|structure",
+                    "href": "/learn/structure"
+                },
+                {
                     "name": "Pages",
                     "id": "learn|pages",
                     "href": "/learn/pages"

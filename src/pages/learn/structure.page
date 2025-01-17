@@ -1,0 +1,36 @@
+---
+import { Layout } from "/layouts/layout.squirrel"
+const title = "Structure";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>
+        The structure are show the concept of frontend (FSR) and server side rendering (SSR).
+    </p>
+
+    <h3>Server</h3>
+    <p>
+        This folder is basically for server side rendering.
+        There are pages, layouts and components.
+    </p>
+
+    <h3>Public</h3>
+    <p>
+        Are you have all kind of files like css, json, image, js files.
+    </p>
+
+    <pre class="code" data-lang="HTML"><code>PROJECT-DIR
+    |---.cache/
+    |---public/
+        |---js/
+        |---img/
+        |---css/
+    |---server/
+        |---components/
+        |---layouts/
+        |---pages/
+    deno.json
+    README.md</code>
+    </pre>
+</Layout>

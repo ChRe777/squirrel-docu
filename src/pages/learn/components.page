@@ -5,11 +5,20 @@ const title = "Learn about components";
 <Layout>
     <h1>${title}</h1>
 
-    <p>Components are same like pages or layouts.
-    Components can have other components as childs.
-    Components are for example a Navbar or the footer.</p>
+    <p>
+        Components have the same format then pages or layouts.
+        Components can have other components as childs, like navigation bar or a footer.
+    </p>
 
-    <h4>Example usage of components</h4>
+   <h4 class="mt-2">Components</h4>
+
+    <pre class="code" data-lang="Page"><code>---
+head (ES6 script)
+---
+body (HTML with ES6 template literals)
+</code></pre>
+
+    <h4 class="mt-8">Example usage of components on a page or layout</h4>
 
         <pre class="code" data-lang="Page"><code>---
 import { Layout } from "/layouts/layout.squirrel"

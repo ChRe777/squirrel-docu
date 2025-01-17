@@ -24,6 +24,52 @@ import { Footer } from "/components/footer.squirrel";
         <style>
             /* Local Styles */
 
+            html,
+            body {
+                height: 100%; /* Ensure the body takes up full viewport height */
+                margin: 0; /* Remove default margin */
+                font-family: Arial, sans-serif; /* Optional font */
+            }
+
+            .layout {
+                display: flex;
+                flex-direction: column; /* Stack header, main, and footer vertically */
+                min-height: 100vh; /* Ensure the container takes at least 100% of the viewport height */
+            }
+
+            .header {
+                position: sticky; /* Make the header sticky */
+                top: 0; /* Stick it to the top of the screen */
+                z-index: 10; /* Ensure it's above other content */
+            }
+
+            .main {
+                flex: 1; /* Make the main content area flexible to take remaining space */
+                padding: 00px; /* Padding for the content */
+                background-color: #f4f4f4; /* Light background for the content */
+            }
+
+            .footer {
+                font-size: 0.9em;
+                color: rgb(128,129,130);
+                background-color: rgb(21,22,23);
+                border-top: 1px dashed rgb(220,221,222);
+            }
+
+            /* ----------------------------------------------- */
+
+            .w-50 {
+                width: 50%;
+            }
+
+            .mt-8 {
+                margin-top: 1.6rem;
+            }
+
+            .mb-8 {
+                margin-bottom: 1.6rem;
+            }
+
             .grid_5_ {
                 background-image:
                     linear-gradient(to right, rgb(230,241,232) 1px, transparent 1px),
@@ -55,27 +101,24 @@ import { Footer } from "/components/footer.squirrel";
                 border-radius: 0 0 1rem 1rem !important;
             }
 
-            .footer {
-                height: 5rem;
-                background-color: rgb(231,232,233);
-            }
-
         </style>
     </head>
     <body>
-        <Navbar />
-        <div class="container">
-            <div class="columns">
-                <div class="column col-2" style="padding-left:2rem; padding-top:1.0rem;">
-                    <Navigation></Navigation>
-                </div>
-                <div class="column col-7 grid_5" style="padding-top:0.7rem;">
-                    <slot/>
-                </div>
-                <div class="column col-3">
+        <div class="layout">
+            <Navbar />
+            <div class="container main">
+                <div class="columns">
+                    <div class="column col-2" style="padding-left:2rem; padding-top:1.0rem;">
+                        <Navigation></Navigation>
+                    </div>
+                    <div class="column col-7 grid_5" style="padding-top:0.7rem;">
+                        <slot/>
+                    </div>
+                    <div class="column col-3">
+                    </div>
                 </div>
             </div>
+            <Footer />
         </div>
-        <Footer />
     </body>
 </html>
