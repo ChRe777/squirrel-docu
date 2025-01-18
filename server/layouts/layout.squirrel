@@ -58,6 +58,26 @@ import { Footer } from "/components/footer.squirrel";
 
             /* ----------------------------------------------- */
 
+            .flex-center-center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .flex-start-center {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+
+            .w-100 {
+                width: 100%;
+            }
+
+            .h-100 {
+                height: 100%;
+            }
+
             .w-50 {
                 width: 50%;
             }
@@ -68,6 +88,10 @@ import { Footer } from "/components/footer.squirrel";
 
             .mb-8 {
                 margin-bottom: 1.6rem;
+            }
+
+            .bg-gray2 {
+                background-color: rgba(231,232,233,0.7);
             }
 
             .grid_5_ {
@@ -112,7 +136,7 @@ import { Footer } from "/components/footer.squirrel";
                         <Navigation></Navigation>
                     </div>
                     <div class="column col-7 grid_5" style="padding-top:0.7rem;">
-                        <slot/>
+                        <hole/>
                     </div>
                     <div class="column col-3">
                     </div>

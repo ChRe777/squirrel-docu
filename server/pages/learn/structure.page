@@ -20,7 +20,7 @@ const title = "Structure";
         Are you have all kind of files like css, json, image, js files.
     </p>
 
-    <pre class="code" data-lang="HTML"><code>PROJECT-DIR
+    <pre class="code" data-lang="HTML"><code>{PROJECT_DIR}
     |---.cache/
     |---public/
         |---js/

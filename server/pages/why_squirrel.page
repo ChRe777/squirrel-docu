@@ -3,37 +3,49 @@ import { Layout } from "/layouts/layout.squirrel";
 const title = "Why Squirrel?";
 ---
 <Layout>
-    <h1>${title}</h1>
-    <p>
-        Squirrel was born from the idea of creating a <i>simple</i>, <i>fast</i>, and <i>modern</i> web framework.
-    </p>
-    <p>
-        It is built with cutting-edge technologies like <a href="https://deno.com">Deno</a> and <a href="https://webreflection.github.io/uhtml/">µHtml</a>.
 
-        I believe in the power of talented individuals loosly cooupled working together, in a loosely coupled way, rather than relying on large software teams.
-    </p>
+    <h1>${title}</h1>
+
     <p>
-        Just like a chef needs the best ingredients to prepare a great meal, a developer needs the best tools to craft exceptional software.
+        Squirrel was born from the idea of creating a <i>simple</i>, <i>fast</i>,
+        and <i>modern</i> web framework.
+    </p>
+
+    <p>
+        It is built with good simple technologies like
+        <a href="https://deno.com">Deno</a> and <a href="https://webreflection.github.io/uhtml/">µHtml</a>.
+        I believe in the power of talented individuals loosly cooupled working together,
+        in a loosely coupled way, rather than relying on large software teams.
+    </p>
+
+    <p>
+        Just like a chef needs the best ingredients to prepare a great meal,
+        a developer needs the best tools to craft exceptional software.
     </p>
 
     <p>
         <b>Web framework come and go</b>, but <b>standards</b> (like HTML5, CCS3, SVG, ...) stay.
     </p>
+
     <p>
         This is a approach to have a small footprint over standards.
         Compared to other frameworks which are heavy and complicated.
     </p>
 
     <h3 class="mt-2">Why Deno?</h3>
+
     <p>
         Deno is the modern Node.js which is simple and secure.
         Read more about Deno <a href="/about_deno" target="_blank">here</a>.
     </p>
 
     <h3 class="mt-2">Why µHtml?</h3>
+
     <p>
         µHtml is very small and effecient library.
         It does not need a complicated virtual doom and still is fast.
-        If you need more information about uHtml read <a href="https://webreflection.github.io/uhtml/" target="_blank">here.
+        If you need more information about uHtml read
+        <a href="https://webreflection.github.io/uhtml/" target="_blank">here.
     </p>
+
 </Layout>

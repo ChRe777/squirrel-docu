@@ -31,8 +31,7 @@ import { ComponentB } from "/components/componentA.squirrel"
     <ComponentB>
         Some text   // goes into hole of component
     </ComponentB>
-</Layout>
-</code></pre>
+</Layout></code></pre>
 
 </Layout>
 

@@ -4,7 +4,7 @@ const imgTop_ = (imgtop == "true") ? true : false;
 ---
 
 <div class="card">
-  ${ imgTop_ ?
+  ${ (imgTop_ == true) ?
     `<div class="card-image card-image-top">
         <img src='${img}' class="img-responsive">
     </div>` : ''
@@ -14,7 +14,7 @@ const imgTop_ = (imgtop == "true") ? true : false;
     <div class="card-subtitle text-gray">${subtitle}</div>
   </div>
   <div class="card-body">
-    <slot />
+    <hole/>
   </div>
   <div class="card-footer">
     <button class="btn btn-primary">Read...</button>

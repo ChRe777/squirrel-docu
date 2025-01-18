@@ -1,0 +1,72 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Learn about layouts";
+---
+<Layout>
+
+    <h1>${title}</h1>
+
+    <p>Layout are the same like pages, but they are define the layout of a page</p>
+
+    <div class="columns">
+        <div class="column col-4">
+            <div class="text-dark bg-gray2">
+                <div class="flex-center-center">HEADER</div>
+                <div class="flex-start-center" style="height: 7rem;">
+                    <div class="flex-center-center h-100" style="width: 3rem;">NAV</div>
+                    <div class="flex-center-center bg-success w-100 h-100">MAIN (hole)</div>
+                </div>
+                <div class="flex-center-center">FOOTER</div>
+            </div>
+        </div>
+        <div class="column col-4">
+            <div class="text-dark bg-gray2">
+                <div class="flex-center-center">HEADER</div>
+                <div class="flex-center-center bg-warning" style="height: 7rem;">MAIN (hole)</div>
+                <div class="flex-center-center">FOOTER</div>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 class="mt-8">Layout example</h3>
+
+    <p>
+        You define a layout with have a slot.
+        A slot if a hole where they page that use the layout fill the content in.
+    </p>
+
+    <pre class="code" data-lang="Squirrel"><code>---
+import { Header } from "/components/header.squirrel";
+import { Footer } from "/components/footer.squirrel";
+---
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="http://foo.com/css" rel="stylesheet" />
+    </head>
+    <body>
+        <Navbar />
+        <hole/>
+        <Footer />
+    </body>
+</html>
+</code></pre>
+
+    <h3 class="mt-8">Use layout on a page</h3>
+
+    <p>
+        Import the layout in the script header of a page and use the Layout like
+        a tag.
+    </p>
+
+    <pre class="code" data-lang="Page"><code>---
+import { Layout } from "/layouts/layout.squirrel"
+---
+<Layout>
+    <h1>Title</h1>  // line goes into the hole of layout
+    Some text       // line goes into the hole of layout
+</Layout>
+</code></pre>
+
+</Layout>

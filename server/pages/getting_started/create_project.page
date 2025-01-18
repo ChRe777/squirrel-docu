@@ -30,7 +30,4 @@ deno task start</pre>
 
     <p>and open der Browser with URL <b>http:/localhost:8000/</b></p>
 
-    <a href="/getting_started/installation" class="btn btn-primary mr-2"><i class="icon icon-arrow-left"></i> Back</a>
-    <a href="/learn" class="btn btn-primary">Next <i class="icon icon-arrow-right"></i></a>
-
 </Layout>

@@ -1,0 +1,21 @@
+<html>
+    <div>
+        <div id="foo" ></div>
+        <divdiv id="box" ></divdiv>
+    </body>
+    <script type="module">
+
+    import { render, html, signal } from "https://cdn.jsdelivr.net/npm/uhtml/preactive.js";
+
+        const state = { some: "special state" };
+        const foo = () => console.log("foo");
+
+        render(
+            document.getElementById("box"),
+            html`<div id="direct" .state="${state}" @click="${foo}">content</div>`,
+        );
+
+        document.querySelector("#direct").state === state;
+
+    </script>
+</html>

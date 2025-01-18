@@ -1,0 +1,20 @@
+---
+const { nr } = Squirrel.props;
+
+const maxSteps = 3;
+const prev = +nr - 1;
+const next = +nr + 1;
+
+const prev_ = "/tutorial/step_" + prev;
+const next_ = "/tutorial/step_" + next;
+---
+<div>
+${ (prev > 0) ?
+    `<a href=${prev_} class="btn btn-primary mt-2"><i class="icon icon-arrow-left"></i> Prev</a>` :
+    ''
+}
+${ (next <= maxSteps) ?
+    `<a href=${next_} class="btn btn-primary mt-2">Next <i class="icon icon-arrow-right"></i></a>`:
+    ''
+}
+</div>

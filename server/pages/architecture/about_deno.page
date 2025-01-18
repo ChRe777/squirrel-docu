@@ -1,6 +1,6 @@
 ---
 import { Layout } from "/layouts/layout.squirrel";
-const title = "About Deno and Node";
+const title = "About Deno";
 ---
 
 <Layout>

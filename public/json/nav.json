@@ -14,8 +14,18 @@
             "children": [
                 {
                     "name": "About Deno",
-                    "id": "about_deno",
-                    "href": "/about_deno"
+                    "id": "architecture|about_deno",
+                    "href": "/architecture/about_deno"
+                },
+                {
+                    "name": "About uHtml",
+                    "id": "architecture|about_uhtml",
+                    "href": "/architecture/about_uhtml"
+                },
+                {
+                    "name": "Analogy",
+                    "id": "architecture|analogy",
+                    "href": "/architecture/analogy"
                 }
             ]
         },

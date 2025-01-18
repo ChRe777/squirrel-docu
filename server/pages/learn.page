@@ -8,6 +8,7 @@ const title = "Learn"
     Here you will learn about following:
 
     <ul>
+        <li><b>Structure</b></li>
         <li><b>Layouts</b></li>
         <li><b>Pages</b></li>
         <li><b>Components</b></li>

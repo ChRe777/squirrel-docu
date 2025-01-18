@@ -18,7 +18,7 @@ head (ES6 script)
 body (HTML with ES6 template literals)
 </code></pre>
 
-<h4 class="mt-8">Example</h4>
+    <h4 class="mt-8">Example</h4>
 
     <pre class="code" data-lang="Page"><code>---
 import { Layout } from "/layouts/layout.squirrel"

@@ -19,7 +19,7 @@ import { Image } from "/components/img.squirrel";
     <header class="navbar bg-gray p-2">
         <section class="navbar-section" style="margin-left:1.5rem;">
             <Image width="20" height="20" src="/img/squirrel_mask2.png" color="rgb(87,85,209)"></Image>
-            <a href="..." class="navbar-brand mr-2 ml-1">SQUIRREL</a>
+            <a href="..." class="navbar-brand mr-2 ml-1" style="border: 0px dashed red;padding-top:4px;">SQUIRREL</a>
         </section>
         <section class="navbar-center">
             <a href="..." class="btn btn-link mr-2">Documentation</a>

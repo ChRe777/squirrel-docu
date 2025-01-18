@@ -1,0 +1,25 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "About µHtml";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>
+    <a href="https://webreflection.github.io/uhtml/" target="_blank">uHtml</a> (micro µ html) is one of the <b>smallest, fastest, memory consumption</b> friendly,
+    yet zero-tools based, library to safely help creating or manipulating DOM content.
+    </p>
+
+    <p>
+    It is entirely <b>Web standards based</b> and it adds just the minimal amount of spices
+    to the templates literals it’s able to understand and optimized for either repeated
+    updates or one-off operations.
+    </p>
+
+    <p>
+    This page describes, without going into too many details, all the features delivered
+    via this module which is roughly 2.5K once minified and compressed, or even bundled
+    within your project.
+    </p>
+
+</Layout>

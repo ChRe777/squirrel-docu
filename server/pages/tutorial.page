@@ -11,11 +11,13 @@ const title = "Tutorial"
     </p>
 
     <p>
-    We create a layout.
-    We will create components.
+        We create a layout.
+        We will create components.
     </p>
 
-    <p><b>Just have fun!!</b></p>
+    <p>
+        <b>Just have fun!!</b>
+    </p>
 
     <h4>Step by Step we will learn following:</h4>
 
@@ -23,9 +25,9 @@ const title = "Tutorial"
 
     <ul>
         <li>Step 1: Create a layout</li>
-        <li>Step 2: Create the blog page</li>
-        <li>Step 3: Create a blog item component</li>
-        <li>Step x: Create a colored logo</li>
+        <li>Step 2: Create a component</li>
+        <li>Step 3: Create a page</li>
+        <li>Step x: Create a logo</li>
     </ul>
 
     <a href="/tutorial/step_1" class="btn btn-primary">Let's go <i class="icon icon-arrow-right"></i></a>

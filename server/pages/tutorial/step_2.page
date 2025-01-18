@@ -5,9 +5,11 @@ import { Layout } from "/layouts/layout.squirrel";
 import { Card } from "/components/card.squirrel";
 import { PrevNext } from "/components/prevnext.squirrel";
 
+const title = "Create a component"
+const step = 2;
 ---
 <Layout>
-    <h1>Step 2 - <b>Create a component</b></h1>
+    <h1>Step ${step} - ${title}</h1>
 
     <p>
         In this step we create a component for blog items. We use cards from the css library.
@@ -24,6 +26,6 @@ import { PrevNext } from "/components/prevnext.squirrel";
         </div>
     </div>
 
-    <PrevNext nr="2"></PrevNext>
+    <PrevNext nr=${step}></PrevNext>
 
 </Layout>

@@ -4,19 +4,24 @@
 import { Layout } from "/layouts/layout.squirrel";
 import { PrevNext } from "/components/prevnext.squirrel";
 
+const title = "Create a layout"
+const step = 1;
 ---
 <Layout>
-    <h1>Step 1 - <b>Create the layout</b></h1>
+
+    <h1>Step ${step} - ${title}</h1>
+
     <p>
         Is this we will create a layout with a header, a footer and a
         hole for the body that will filled on each page that uses this
         layout.
     </p>
+
     <p>
         The layout is a full html with head and body and with styles.
     </p>
 
-        <pre class="code" data-lang="Squirrel"><code>---
+    <pre class="code" data-lang="Squirrel"><code>---
 // Import components
 import { Header } from "/components/header.squirrel";
 import { Footer } from "/components/footer.squirrel";
@@ -30,11 +35,12 @@ import { Footer } from "/components/footer.squirrel";
     </head>
     <body>
         <Header />
-        <slot/>
+        <hole/>
         <Footer />
     </body>
 </html>
 </code></pre>
 
-    <PrevNext nr="1"></PrevNext>
+    <PrevNext nr=${step}></PrevNext>
+
 </Layout>

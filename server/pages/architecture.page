@@ -1,0 +1,51 @@
+---
+import { Layout } from "/layouts/layout.squirrel";
+const title = "Architecture";
+---
+<Layout>
+    <h1>${title}</h1>
+
+    <p>This is brief description about the architeture of Squirrel.</p>
+
+    <h5 class="mt-2">Backend and Front</h5>
+    <p>
+        Squirrel uses Server-Side-Rendering and Front-Side-Rendering.
+        Squirrel's key is to combine static with dynamic content.
+    </p>
+
+    <h5 class="mt-2">Brief with history</h5>
+    <p>
+        In the beginning with rendered everything on the server.
+        THen with have a little bit dynamic with javascript.
+        Then Microsoft invented XMLHttpRequest to download data
+        from server on the fly and the stone started to role.
+        Then we ended in huge frontside rendering frameworks
+        like Vue, Angular, React and so own. They invented the
+        virtual DOM to manage the rendering performance. Now
+        we are back on server side rendering for static parts
+        of the page and dynamic holes or island on the front end.
+        Even we can combine everything we need. Server rendering
+        could be cached for static rendering, but also can be dynamic
+        on the backend and Dynamic in the frontend. If you let the
+        technolgy open, people would be creative to fill there needs.
+    </p>
+
+
+
+
+    <p class="mt-8">
+        The server renders the most of the HTML and this can he cached.
+        And then it lets <b>holes</b> in the page for dynamic content that could
+        be fill with content at the front end. So the key is the combination of
+        both world server and front rendering.
+    </p>
+
+    <p>
+        Current there is a support for uHTML front end component, but basically
+        you can use any other framework that suppor to render into a single
+        div-tag.
+    </p>
+
+
+
+</Layout>

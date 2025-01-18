@@ -4,15 +4,16 @@
 import { Layout } from "/layouts/layout.squirrel";
 import { PrevNext } from "/components/prevnext.squirrel";
 
-
+const title = "Create a page"
+const step = 3;
 ---
 <Layout>
-    <h1>Step 3: Create a the main blog page</h1>
+    <h1>Step ${step} - ${title}</h1>
 
     <p>
         Here we create a the main page which shows the blog entries.
     </p>
 
-    <PrevNext nr="3"></PrevNext>
+    <PrevNext nr=${step}></PrevNext>
 
 </Layout>
